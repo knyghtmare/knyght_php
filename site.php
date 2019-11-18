@@ -5,18 +5,14 @@
     <title></title>
   </head>
   <body>
+    <form action="site.php" method=get>
+        <input type="number" name="num1">
+        <br>
+        <input type="number" name="num2">
+        <input type="submit">
+        <br>
 
-    <?php
-      echo "<h1>My Webpage</h1>";
-      echo "<hr>";
-      echo "<p>This webpage is mine!</p>";
-
-      $characterName = "Jahin";
-      $characterAge = 22;
-
-      echo "My name is $characterName.<br>";
-      echo "I am $characterAge years old.<br>"
-     ?>
-
+        <?php echo $_GET["num1"] + $_GET["num2"] ?>
+    </form>
   </body>
 </html>
