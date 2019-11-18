@@ -6,11 +6,7 @@
   </head>
   <body>
 
-  <?php
-
-
-
-  ?>
+  <?php ?>
 
   </body>
 </html>
