@@ -15,7 +15,7 @@
       $characterAge = 22;
 
       echo "My name is $characterName.<br>";
-      echo "My age is $characterAge.<br>"
+      echo "I am $characterAge years old.<br>"
      ?>
 
   </body>
