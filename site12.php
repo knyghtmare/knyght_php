@@ -9,7 +9,10 @@
   <?php include 'header.html'?>
 
   <?php
-  // code whatever you want here
+    $title = "My First Post";
+    $author = "Knyght";
+    $wordCount = 400;
+    include "article-header.php"
   ?>
 
   <?php include 'footer.html'?>

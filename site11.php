@@ -8,9 +8,7 @@
 
   <?php include 'header.html'?>
 
-  <?php
-  // code whatever you want here
-  ?>
+  <p>Hello World!</p>
 
   <?php include 'footer.html'?>
 
