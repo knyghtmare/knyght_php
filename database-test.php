@@ -14,10 +14,12 @@ if ( !$db->isConnected() ) {
 
 $db->query("SELECT * FROM students");
 var_dump( $db->getResults() );
-echo "Rows: " . $db->rowCount();
+echo "<br>";
+echo "Rows: ".$db->rowCount()."<br>";
 var_dump($db->single());
+echo "<br>";
 
-$db->query("SELECT * FROM tbl_test where id = :id");
-$db->bind(':id', 2);
+$db->query("SELECT * FROM students where student_id = :id");
+$db->bind(':id', 3);
 var_dump($db->single());
  ?>
