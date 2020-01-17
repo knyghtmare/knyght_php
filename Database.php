@@ -21,7 +21,7 @@ class Database {
     public function __construct()
     {
         // set PDO connection
-        $dsn = 'mysql:host'.$this->host.';dbname='.$this->dbname;
+        $dsn = 'mysql:host='.$this->host.';dbname='.$this->dbname;
 
         $options = array(
             PDO::ATTR_PERSISTENT => true,
