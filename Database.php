@@ -15,7 +15,7 @@ class Database {
     private $connection;
     private $error;
     private $stmt;
-    private $db_connected = true;
+    private $db_connected = false;
 
 
     public function __construct()
@@ -31,6 +31,7 @@ class Database {
         try {
             //code...
             $this->connection = new PDO($dsn, $this->user, $this->pwd, $options);
+            $this->db_connected = true;
         } catch (PDOException $e) {
             //throw $th;
             $this->error =$e->getMessage().PHP_EOL;
