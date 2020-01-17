@@ -4,15 +4,15 @@ require_once('Database.php');
 
 $db = new Database();
 
-echo $db->isConnected() ? "DB Connected".PHP_EOL : "DB Not Connected".PHP_EOL; 
+echo $db->isConnected() ? "DB Connected".PHP_EOL : "DB Not Connected".PHP_EOL;
 
 if ( !$db->isConnected() ) {
     # code...
-    echo $db->getError();
-    die("Unable to connected to database");
+    echo $db->getError().'<br>';
+    die("Unable to connect to database");
 }
 
-$db->query("SELECT * FROM testtable");
+$db->query("SELECT * FROM students");
 var_dump( $db->getResults() );
 
  ?>
